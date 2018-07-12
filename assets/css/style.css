@@ -1,0 +1,485 @@
+html,body {
+	position: relative;
+	font-family: 'Reenie Beanie', cursive;
+	font-family: 'Oswald', sans-serif;
+	/*background-color: #2B2B2B;*/
+	background: url('background.jpg');
+}
+
+
+#nav-bar {
+}
+
+#nav-left {
+	float: left;
+	padding: 30px;
+	position: fixed;
+	z-index: 3;
+}
+
+#nav-right {
+	/*float: right;*/
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	right: 0;
+
+}
+
+.nav-element-left {
+	font-family: reenie beanie; 
+	font-size: 24px;
+	color: #F3F3F3;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+}
+
+
+.nav-element {
+	font-family: reenie beanie; 
+	font-size: 24px;
+	color: #F3F3F3;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+.nav-element:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #F3F3F3;
+  visibility: hidden;
+  border-radius: 50px;
+  transform: scaleX(0);
+  transition: .25s linear;
+  text-align: center;
+}
+.nav-element:hover:before,
+.nav-element:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+  }
+.nav-element::after {
+  top: 62.5%;
+  height: 2px;
+  width: 90%;
+}
+
+
+
+.nav-element:hover {
+	cursor: pointer;
+}
+
+#line hr{
+	position: fixed;
+}
+
+
+#content {
+	position: absolute;
+	width: 66%;
+	left: 17%;
+	right: 17%;
+	height: 500px;
+	top: 70px;
+	overflow: hidden;
+	justify-content: center;
+}
+
+.img img {
+	border-radius: 50%;
+	position: relative;
+	top: 50px;
+	width: 300px;
+	height: auto;
+}
+
+.title {
+	font-family: oswald;
+	font-size: 36px;
+	color: #F3F3F3;
+	position: relative;
+	bottom: 200px;
+	left: 350px;
+	z-index: 2;
+	display: inline-block;
+}
+
+.title:hover {
+	cursor: pointer;
+}
+
+.title::after {
+  content: "";
+  height: 20px;
+  width: 100%;
+  padding: 0px 4px;
+  background: #B8433B;
+  opacity: .4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.title:hover::after {
+  height: 50%;
+  padding: 2px 4px;
+  opacity: .6;
+}
+
+.text {
+	font-family: reenie beanie; 
+	font-size: 24px;
+	color: #F3F3F3;
+	width: 55%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	position: relative;
+	bottom: 200px;
+	left: 350px;
+	/* add later display: inline-block;	*/
+}
+
+.button {
+	font-size: 24px;
+	color: #F3F3F3;
+	text-decoration: none;
+	position: relative;
+	bottom: 200px;
+	left: 700px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.button::after {
+  content: "";
+  height: 12px;
+  width: 100%;
+  padding: 0px 4px;
+  background: #B8433B;
+  opacity: .4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.button:hover::after {
+  height: 50%;
+  padding: 2px 4px;
+  opacity: .6;
+}
+
+#lower-nav {
+	position: relative;
+	bottom: 100px;
+	overflow: hidden;
+}
+
+
+#project-name {
+	font-family: reenie beanie; 
+	font-size: 36px;
+	color: #F3F3F3;	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 12pt;
+}
+
+.project-name1 {
+	width: 16.66%;
+	opacity: 0;
+
+}
+.project-name2 {
+	width: 16.66%;
+	opacity: 0;
+}
+.project-name3 {
+	width: 16.66%;
+	opacity: 0;
+}
+.project-name4 {
+	width: 16.66%;
+	opacity: 0;
+}
+.project-name5 {
+	width: 16.66%;
+	opacity: 0;
+}
+.project-name6 {
+	width: 16.66%;
+	opacity: 0;
+}
+.project-name7 {
+	width: 16.66%;
+	opacity: 0;
+}
+
+#project-page {
+	display: flex;
+	font-size: 36px;
+	color: #F3F3F3;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+#project-page div {
+	overflow: hidden;
+}
+
+/*KALEIDOSCOPE PAGE*/
+
+.page1 {
+	font-family: oswald;
+	font-size: 36px;
+	color: #F3F3F3;
+	text-decoration: none;
+	width: 16.66%;
+	justify-content: end;
+}
+
+.page1:hover {
+	cursor: pointer;
+}
+.page1::after {
+  content: "";
+  height: 16px;
+  width: 2%;
+  padding: 0px 4px;
+  background: #F3F3F3;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+}
+.page1:hover::after {
+ width: 15%;
+ height: 20px;
+ padding: 2px 4px;
+ background: #3BA9B8;
+ opacity: .4
+}
+
+/*BTS PAGE*/
+
+.page2 {
+	font-family: oswald;
+	font-size: 36px;
+	color: #F3F3F3;
+	text-decoration: none;
+	width: 16.66%;
+	justify-content: end;
+}
+
+.page2:hover {
+	cursor: pointer;
+}
+.page2::after {
+  content: "";
+  height: 16px;
+  width: 2%;
+  padding: 0px 4px;
+  background: #F3F3F3;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 16.66%;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+}
+.page2:hover::after {
+ width: 15%;
+ height: 20px;
+ padding: 2px 4px;
+ background: #FFF500;
+ opacity: .4;
+ left: 16.66%;
+}
+
+/*Amalgamation Page*/
+
+
+.page3 {
+	font-family: oswald;
+	font-size: 36px;
+	color: #F3F3F3;
+	text-decoration: none;
+	width: 16.66%;
+	justify-content: end;
+}
+
+
+.page3:hover {
+	cursor: pointer;
+}
+.page3::after {
+  content: "";
+  height: 16px;
+  width: 2%;
+  padding: 0px 4px;
+  background: #F3F3F3;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 33.32%;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+}
+.page3:hover::after {
+ width: 15%;
+ height: 20px;
+ padding: 2px 4px;
+ background: #3BB875;
+ opacity: .4;
+ left: 33.32%;
+}
+
+
+/*WEEKLY BEATS PAGE*/
+
+
+.page4 {
+	font-family: oswald;
+	font-size: 36px;
+	color: #F3F3F3;
+	text-decoration: none;
+	width: 16.66%;
+	justify-content: end;
+}
+
+.page4:hover {
+	cursor: pointer;
+}
+.page4::after {
+  content: "";
+  height: 16px;
+  width: 2%;
+  padding: 0px 4px;
+  background: #F3F3F3;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 49.98%;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+}
+.page4:hover::after {
+ width: 15%;
+ height: 20px;
+ padding: 2px 4px;
+ background: #B8433B;
+ opacity: .4;
+ left: 49.98%;
+}
+
+
+.page5 {
+	font-family: oswald;
+	font-size: 36px;
+	color: #F3F3F3;
+	text-decoration: none;
+	width: 16.66%;
+	justify-content: end;
+}
+.page6 {
+	font-family: oswald;
+	font-size: 36px;
+	color: #F3F3F3;
+	text-decoration: none;
+	width: 16.66%;
+	justify-content: end;
+}
+
+
+#footer {
+	bottom: 0;
+	position: fixed;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	right: 0;
+}
+
+.footer {
+	font-family: reenie beanie;
+	font-size: 14px;
+	color: #F3F3F3;
+}
+
+
+/*MEDIA QUERY ULTIMATE RESPONSIVENESS*/
+
+@media (max-width: 1187px) {
+		#content {
+		width: 100%;
+		left: %;
+		right: ;
+		}
+}
+
+/*
+@media (max-width: 700px)  {
+
+		.nav-element-left {
+			font-size: 48px;
+		}
+
+		.nav-element {
+		font-size: 36px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 40px;
+		padding-bottom: 10px;
+		}
+
+		}
+
+		.img img {
+			width: 300px;
+			justify-content: center;
+			position: relative;
+			top: 100px;
+		}
+
+		.title {
+			font-size: 48px;
+			bottom: px;
+			right: 60px;
+		}
+
+		/*#content {
+		width: 100%;
+		left: %;
+		right: ;
+		overflow: visible;
+		}*/
+}
